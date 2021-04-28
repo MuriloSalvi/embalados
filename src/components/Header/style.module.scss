@@ -1,0 +1,54 @@
+.header{
+  width: 100%;
+  background-color: rgb(241, 247, 255);
+  box-shadow: 2px 2px 5px black;
+
+  .header__container{
+  
+    max-width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+      img{
+        width: 20rem;
+      }
+      .header__nav{
+        margin: auto;
+        
+        
+        ul{
+          width: 50vh;
+          list-style: none;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          align-items: center;
+          li{
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #01466F;
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            
+              &::after{
+                content: '';
+                width: 0%;
+                background-color: #01466F;
+                height: 3px;
+                bottom: -3px;
+                position: absolute;
+                left: 0;
+                transition: width 200ms ease-out;
+              }
+              &:hover::after{
+                width: 100%
+              }
+          }
+        }
+      
+  
+      }
+  }
+}
+
