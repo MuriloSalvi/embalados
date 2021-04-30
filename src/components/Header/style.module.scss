@@ -61,7 +61,7 @@
 @media (max-width: 450px){
   .header{
     width: 450px;
-    height: 8rem;
+    height: 5rem;
     background-color: rgb(241, 247, 255);
     box-shadow: 2px 2px 5px black;
     
@@ -72,20 +72,19 @@
           margin-left: 2rem;
           flex: 2;
           img{
-            width: 350px;
+            width: 200px;
           }
         }
         .header__icon{
           position: relative;
           flex: 1;
-          margin-top: 0.6rem;
           padding: 1rem;
           display: inline;
           height: 5rem;
           width: 1rem;
           img{
-            width: 5rem;
-            height: 5rem;
+            width: 3rem;
+            height: 3rem;
             position: absolute;
             right: 0;
           }
@@ -94,7 +93,7 @@
         .header__nav{
           position: fixed;
           right: 0;
-          top: 8rem;
+          top: 5rem;
           ul{
             display: flex;
             flex-direction: column;
