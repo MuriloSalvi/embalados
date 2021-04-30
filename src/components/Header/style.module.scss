@@ -16,7 +16,6 @@
     
       img{
         width: 20rem;
-        margin-left: 0px;
       }
 
       
@@ -64,8 +63,8 @@
 
 @media (max-width: 700px){
   .header{
-    max-width: 700px;
-    height: 12.5rem;
+    width: 700px;
+    height: 8rem;
     background-color: rgb(241, 247, 255);
     box-shadow: 2px 2px 5px black;
     .header__icon{
@@ -73,25 +72,24 @@
       position: absolute;
       width: 5rem;
       height: 5rem;
-      right: -20rem;
-      top: 3rem;
+      right: -5rem;
+      top: 2rem;
     }
     .header__container{
-      margin: auto;
-      position: relative;
+      margin-top: 0;
+      position: fixed;
       display: flex;
       
         img{
           position: absolute;
-          left: 8rem;
+          left: 0rem;
           top:0.8rem;
-          width: 20rem;
+          
         }
-        
         .header__nav{
-          position: absolute;
+          position: fixed;
           right: 0;
-          top: 12.5rem;
+          top: 8rem;
           ul{
             display: flex;
             flex-direction: column;
@@ -113,7 +111,7 @@
 }
 @media (max-width: 400px){
   .header{
-    max-width: 400px;
+    width: 400px;
   }
 }
 
