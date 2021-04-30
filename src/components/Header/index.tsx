@@ -9,10 +9,14 @@ export default function Header(){
  }
   return(
     <div className={style.header} >
-       <img className={style.header__icon} src="/tres-pontos.png" alt=""/>
+       
     <div className={style.header__container}> 
-    <img src="/logo.png" alt="logo?"/>
-
+    <div className ={style.header__logo}>
+      <img  src="/logo.png" alt="logo"/>
+    </div>
+    <div className={style.header__icon}>
+      <img src="/tres-pontos.png" alt="Navegação"/>
+    </div>
   
     <nav className={style.header__nav}>
       
@@ -23,6 +27,7 @@ export default function Header(){
         <li>Contato</li>
       </ul>
     </nav>
+   
     </div>
     </div>
   )
