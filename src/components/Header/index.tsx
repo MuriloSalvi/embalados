@@ -1,12 +1,10 @@
 import style from './style.module.scss'
 import {useState} from 'react'
+import Navbar from '../Navbar'
 
 export default function Header(){
-const [active, setMode] =useState(false)
-const toggle = () =>{
-  setMode(!active)
-}
-
+const [open, setOpen] = useState(false);
+ 
   return(
     <div className={style.header} >
        
@@ -14,19 +12,14 @@ const toggle = () =>{
     <div className ={style.header__logo}>
       <img  src="/logo.png" alt="logo"/>
     </div>
-    <div className={style.header__icon}>
+    <div className={style.header__icon} onClick={()=> setOpen(!open)}>
       <img src="/tres-pontos.png" alt="Navegação"/>
     </div>
   
-    <nav className={style.header__nav }>
-      
-      <ul>
-        <li>Sobre</li>
-        <li>Produtos</li>
-        <li>Parceiros</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
+  {open &&
+   <Navbar />
+    }
+    
    
     </div>
     </div>
