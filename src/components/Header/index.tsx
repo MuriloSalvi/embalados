@@ -1,12 +1,12 @@
 import style from './style.module.scss'
-
-
-
+import {useState} from 'react'
 
 export default function Header(){
- function mosrtar(){
-   alert('links mudarao as paginas do site')
- }
+const [active, setMode] =useState(false)
+const toggle = () =>{
+  setMode(!active)
+}
+
   return(
     <div className={style.header} >
        
@@ -18,10 +18,10 @@ export default function Header(){
       <img src="/tres-pontos.png" alt="Navegação"/>
     </div>
   
-    <nav className={style.header__nav}>
+    <nav className={style.header__nav }>
       
       <ul>
-        <li onClick ={mosrtar}>Sobre</li>
+        <li>Sobre</li>
         <li>Produtos</li>
         <li>Parceiros</li>
         <li>Contato</li>
