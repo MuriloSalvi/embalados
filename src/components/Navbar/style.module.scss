@@ -3,7 +3,7 @@
     right: 0;
     top: 6rem;
     width: 50vw;
-    
+    z-index: 5000;
 
 
     ul{position: absolute;
@@ -22,7 +22,7 @@
       li{
         font-size: 2rem;
         margin-top: 1rem;
-        
+        cursor: pointer;
         color: #01466F;
       
     

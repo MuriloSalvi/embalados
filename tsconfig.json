@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/Carousel/index.tsx", "src/pages/index.js", "src/pages/_partners.js", "src/pages/_contact.js", "src/pages/_app.js", "src/pages/_about.js", "src/components/Navbar/index.js", "src/components/Information/index.js", "src/components/GMap/index.js", "src/components/Carousel/SliderDate.js"  ],
   "exclude": [
     "node_modules"
   ]
