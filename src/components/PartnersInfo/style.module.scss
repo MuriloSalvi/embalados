@@ -1,0 +1,40 @@
+.partners{
+text-align: center;
+h1{
+  color: var(--main-color);
+}
+.partners__cards{
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+ .partners__card{
+  text-align: center;
+  background-color: var(--light-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+ margin-left: 1rem;
+  border-radius: 1rem;
+   img{
+     width: 20rem;
+   }
+   a{
+     text-decoration: none;
+   }
+
+ }
+}
+}
+
+@media (max-width: 500px){
+  .partners{
+    max-width: 350px;
+
+    .partners__cards{
+      display: inline;
+    }
+  }
+  
+}
