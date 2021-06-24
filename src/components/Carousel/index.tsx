@@ -1,36 +1,24 @@
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import style from './style.module.scss'
 
 
 export default function Carrosel(){
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
   return(
-    <Carousel responsive={responsive}>
+    <div>
   <div className = {style.item1}>
-    <img src="/image1.jpeg" alt="" />
+    <img src="/image1.png" alt="" />
   </div>
-  <div>Item 2</div>
-  <div>Item 3</div>
-  <div>Item 4</div>
-    </Carousel>
+  <div className = {style.title}>
+  <h3 >Siga-nos nas redes sociais!</h3>
+  </div>
+  <div className={style.social}>
+    <a href="https://www.instagram.com/embalados_distribuidora/" target='_blanc'>
+      <img src="/insta.png" alt="" />
+    </a>
+    <a href="https://www.facebook.com/embaladosdistribuidoramatinhos/" target='_blanc'>
+      <img src="/facebook.png" alt="" />
+    </a>
+  </div>
+    </div>
   )
 }

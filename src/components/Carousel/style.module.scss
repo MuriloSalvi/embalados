@@ -1,0 +1,35 @@
+
+
+.item1{
+    max-width: 1020px;
+    margin: auto;
+    margin-top: 2rem;
+    img{
+        width: 100%;
+    }
+}
+.title{
+    text-align: center;
+    color: var(--main-color);
+    font-family: Roboto,"sans-serif";
+}
+.social{
+    max-width: 1020px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    a{
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 500px){
+    .social{
+        a{
+            img{
+                width: 40px;
+            }
+        }
+    }
+}
