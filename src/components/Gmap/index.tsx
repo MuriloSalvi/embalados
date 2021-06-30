@@ -1,7 +1,5 @@
 import GoogleMapReact from 'google-map-react';
-import style from './style.module.scss'
 
-const AnyReactComponent = ({ text }) => <div className ={style.marker}><div className={style.point}></div></div>;
 
 export default function SimpleMap(){
   const defaultProps = {
