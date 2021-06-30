@@ -1,0 +1,26 @@
+.marker {
+  font-family: 'open sans';
+  font-size: .85em;
+  margin: 0 auto; 
+  background: #000;
+  border-radius:  30px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(250, 103, 103);
+
+  /* Position relative para a seta não exceder os limites do balão, já que vamos usar position absolute nele */
+  position: relative;
+  margin-bottom: 1em;
+  .point{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 15px;
+    left: 5px;
+    top: 5px;
+  }
+}
+

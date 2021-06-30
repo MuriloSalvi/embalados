@@ -1,14 +1,15 @@
 import GoogleMapReact from 'google-map-react';
+import style from './style.module.scss'
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className ={style.marker}><div className={style.point}></div></div>;
 
 export default function SimpleMap(){
   const defaultProps = {
     center: {
-      lat: 10.99835602,
-      lng: 77.01502627
+      lat: -25.8275,
+      lng:  -48.5414
     },
-    zoom: 11
+    zoom: 17
   };
 
   return (
@@ -20,7 +21,11 @@ export default function SimpleMap(){
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        
+        <AnyReactComponent
+            lat={-25.8274}
+            lng={-48.5414}
+            text="Embalados Matinhos"
+          />
       </GoogleMapReact>
     </div>
     </div>

@@ -8,7 +8,7 @@ import style from './style.module.scss';
     <div className={style.partners__cards}>
       {PartnersData.map((partners )=>{
       return (
-      <div className = {style.partners__card}>
+      <div className = {style.partners__card} key={partners.id}>
       <a href={partners.site} target='_blanc'>
       <img src={partners.img} alt ='teste'/>
       </a>
