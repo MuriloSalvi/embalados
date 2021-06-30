@@ -21,11 +21,7 @@ export default function SimpleMap(){
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        <AnyReactComponent
-            lat={-25.8274}
-            lng={-48.5414}
-            text="Embalados Matinhos"
-          />
+        
       </GoogleMapReact>
     </div>
     </div>
