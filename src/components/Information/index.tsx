@@ -13,9 +13,6 @@ export default function Information(){
        <div className ={style.contact__phone}>
        <img src="/phone.png" alt="" /><h2>(41) 99587- 4121</h2>
        </div>
-       <div className ={style.contact__phone}>
-       <img src="/phone.png" alt="" /><h2>(41) 3473-2928</h2>
-       </div>
       </div>
       <div className={style.adress}>
       <h2>R. Formosa do Oeste, 21 - Centro, Matinhos - PR</h2>
