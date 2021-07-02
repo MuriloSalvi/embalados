@@ -7,19 +7,10 @@ export default function EmailForm(){
         <div className ={style.container}>
 
             <h1>Orçamentos por email:</h1>
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-                <input type="text" id='name' name='name' placeholder='Seu nome ou sua empresa'/>
-            </p>
-            <p>
-                <input type="email" name='email' placeholder='Seu email'/>
-            </p>
-            <p>
-                <input type="text" name ='message' id ='message' placeholder='Sua Mensagem'/>
-            </p>
-            <button type='submit'>enviar</button>
+        <form className={style.form} name="contact" method="POST" data-netlify="true">
+            <h3>embaladosdistribuidora@gmail.com</h3>
         </form>
-        <a href="">
+        <a href="https://api.whatsapp.com/send?phone=5541995180916" target='_blanc'>
         <p className={style.icon}>
         <h2>Também por Whatsapp</h2> <FontAwesomeIcon icon={faWhatsapp} className={style.watsapp}/>
         </p>
